@@ -1,6 +1,6 @@
 <template>
     <div ref="editor"></div>
-    <input type="text" ref="quillTextInput" />
+    <!-- <input type="text" ref="quillTextInput" /> -->
 </template>
   
 <script>
@@ -35,11 +35,11 @@
           toolbar: this.toolbarOptions,
         },
       });
-      this.quillInstance.on('text-change', () => {
-        if (!this.quillInstance) return;
-        const htmlContent = this.quillInstance.root.innerHTML;
-        this.$refs.quillTextInput.value = htmlContent;
-      });
+      // this.quillInstance.on('text-change', () => {
+      //   if (!this.quillInstance) return;
+      //   const htmlContent = this.quillInstance.root.innerHTML;
+      //   this.$refs.quillTextInput.value = htmlContent;
+      // });
     },
     methods: {
         getEditorContent() {

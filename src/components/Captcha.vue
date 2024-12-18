@@ -1,6 +1,6 @@
 <template>
     <img ref="captchaImage" alt="Captcha" />
-    <button @click="loadCaptcha">Refresh</button>
+    <button @click="loadCaptcha">Refresh Captcha</button>
     <input 
         type="text" 
         v-model="captchaInput"  
